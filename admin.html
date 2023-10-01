@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/admin.css">
+    <title>Admin</title>
+</head>
+<body>
+    <div id="title">
+        <div class="feature">
+            <h3>Admin</h3>
+            
+            <a href="Login.html">
+                <i class="fa fa-power-off" style="font-size:20px;color:rgb(48, 130, 198)"></i>Đăng xuất
+            </a>
+        </div>
+        <div class="tieude">
+          
+            <h1>Hệ quản trị nội dung</h1>
+        </div>
+    </div>
+    <hr style="border: 2px solid blue;">
+    <hr style="border: 2px solid red;margin-top: 5px;">
+    
+    <div id="page1">
+        <div class="func">
+            <label for="toggle_sidebar0">Trang chủ</label>
+            <input type="checkbox" name="" id="toggle_sidebar0">
+            <div class="sidebar0">
+                <ul class="menu_list">
+                    <li class="tab-item active"><a href="#list-quanly">Trang chủ</a></li>
+                   
+                </ul>
+           </div>
+            <label for="toggle_sidebar">Bán hàng</label>
+            <input type="checkbox" name="" id="toggle_sidebar">
+            <div class="sidebar">
+                <ul class="menu_list">
+                    <li class="tab-item "><a href="">Hóa đơn bán</a></li>
+                    <li class="tab-item"><a href="">Khách hàng</a></li>
+                </ul>
+           </div>
+            <label for="toggle_sidebar1">Nhập hàng</label>
+            <input type="checkbox" name="" id="toggle_sidebar1">
+            <div class="sidebar1">
+                <ul class="menu_list">
+                    <li class="tab-item"><a href="#table_1">Hóa đơn nhập</a></li>
+                    <li class="tab-item"><a href="">Hãng sản xuất</a></li>
+                    <li class="tab-item"><a href="">Nhà cung cấp</a></li>
+                    <li class="tab-item"><a href="">Người dùng</a></li>
+                    <li class="tab-item"><a href="">Tài khoản</a></li>
+                </ul>
+           </div>
+            <label for="toggle_sidebar2">Danh mục</label>
+            <input type="checkbox" name="" id="toggle_sidebar2">
+            <div class="sidebar2">
+                <ul class="menu_list">
+                    <li class="tab-item"><a href="#quanlysp">Sản phẩm</a></li>
+                    <li class="tab-item"><a href="">Slide show</a></li>
+                    <li class="tab-item"><a href="">Chuyên mục</a></li>
+                    <li class="tab-item"><a href="">Quảng cáo</a></li>
+                </ul>
+           </div>
+           
+            
+        </div>
+    </div>
+    <div id="page2">
+        <div id="list-quanly" class="tab-content-item">
+            <div class="quanly active" style="background: rgb(255, 142, 1);">
+                <i class="fa-solid fa-tv"></i>
+                <a href="#quanlysp"><h3>Quản lý sản phẩm</h3></a>
+            </div>
+            <div class="quanly" style="background: rgb(1, 170, 177);">
+                <i class="fa-sharp fa-solid fa-sun"></i>
+                <h3>Quản lý tin đặc biệt</h3>
+            </div>
+            <div class="quanly" style="background: rgb(125, 187, 0);">
+                <i class="fa-solid fa-battery-full"></i>
+                <h3>Quản lý slide show</h3>
+            </div>
+            <div class="quanly" style="background: rgb(0, 111, 203);">
+                <i class="fa-solid fa-rectangle-ad"></i>
+                <h3>Quản lý chuyên mục</h3>
+            </div>
+            <div class="quanly" style="background: rgb(197, 38, 32);">
+                <i class="fa-regular fa-user"></i>
+                <h3>Quản lý nhà cung cấp</h3>    
+            </div>
+            <div class="quanly" style="background: rgb(1, 170, 177);">
+                <i class="fa-sharp fa-solid fa-sun"></i>
+                <h3>Quản lý nhập hàng</h3>    
+            </div>
+            <div class="quanly" style="background: rgb(125, 187, 0);">
+                <i class="fa-solid fa-battery-full"></i>
+                <h3>Quản lý bán hàng</h3>    
+            </div>
+            <div class="quanly" style="background: rgb(0, 111, 203);">
+                <i class="fa-solid fa-rectangle-ad"></i>
+                <h3>Quản lý quảng cáo</h3>    
+            </div>
+            <div class="quanly" style="background: rgb(255, 142, 1);">
+                <i class="fa-solid fa-tv"></i>
+                <h3>Quản lý tài khoản</h3>    
+            </div>
+            <div class="quanly" style="background: rgb(1, 170, 177);">
+                <i class="fa-sharp fa-solid fa-sun"></i>
+                <h3>Quản lý hàng sản xuất</h3>    
+            </div>
+        </div>
+        
+        <div id="quanlysp" class="tab-content-item"> 
+             <h3>
+                <i class="fa-solid fa-arrow-right"></i>
+                Quản lý sản phẩm
+            </h3>
+            <button style="padding:10px; background-color: rgb(0, 104, 201);color: white;" onclick="showcart()">Thêm</button>
+            
+            
+         
+           
+                <!-- <h3>
+                    <i class="fa-solid fa-arrow-right"></i>
+                    Quản lý sản phẩm
+                </h3>
+                <button style="padding:10px; background-color: rgb(0, 104, 201);color: white;" onclick="showcart()">Thêm</button>
+                
+                <div id="add">
+                    <h1>Thêm sản phẩm</h1>
+                    <div class="add1">
+                        <h3>Mã sản phẩm</h3>
+                        <input type="text" name="msp" id="msp">
+                    </div>
+                    <div class="add1">
+                        <h3>Mã seri</h3>
+                        <input type="text" name="msr" id="msr">
+                    </div>
+                    <div class="add1">
+                        <h3>Tên sản phẩm</h3>
+                        <input type="text" name="tsp" id="tsp">
+                    </div>
+                    <div class="add1">
+                        <h3>Tên chuyên mục</h3>
+                        <input type="text" name="tcm" id="tcm">
+                    </div>
+                    <button class="btnAdd" onclick="themvaogiohang(this)">Thêm</button>
+                    <button class="btnThoat" onclick="showcart()">Thoát</button>
+                </div> -->
+              
+                        
+                   
+               
+            <table class="tbl-main">
+                <tr class="tr1">
+                    <td>STT</td>
+                    <td>
+                        <input type="checkbox" name="chksp" id="chksp">
+                    </td>
+                    <td>Mã sản phẩm</td>
+                    <td>Mã seri</td>
+                    <td>Tên sản phẩm</td>
+                    <td>Tên chuyên mục</td>
+                    <td>Ngày đăng</td>
+                    <td>Xem</td>
+                    <td>Sửa</td>
+                    <td>Xóa</td>
+                </tr>
+                <tr style="background: rgb(238, 238, 238);">
+                    <td>91</td>
+                    <td>
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td>3503</td>
+                    <td>HDW_ADSNDF</td>
+                    <td>Bánh đậu xanh Hoà An</td>
+                    <td>Kẹo Hà Nội</td>
+                    <td>09/03/2020</td>
+                    <td><i class="fa-solid fa-magnifying-glass"></i></td>
+                    <td><i class="fa fa-file"></i></td>
+                    <td><i class="fa-solid fa-trash-can"></i></td>
+                </tr>
+                <tr>
+                    <td>92</td>
+                    <td>
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    <td>3502</td>
+                    <td>HJJH-4512</td>
+                    <td>Kẹo lạc vừng Diên Hương</td>
+                    <td>Kẹo Hà Nội</td>
+                    <td>09/03/2020</td>
+                    <td><i class="fa-solid fa-magnifying-glass"></i></td>
+                    <td><i class="fa fa-file"></i></td>
+                    <td><i class="fa-solid fa-trash-can"></i></td>
+                </tr>
+                <tr style="background: rgb(238, 238, 238);">
+                    <td>93</td>
+                    <td>
+                        <input type="checkbox" name="" id="">
+                    </td>
+                    
+                    <td>3501</td>
+                    <td>FS-402F</td>
+                    <td>Lạc rang húng lìu Bà Vân</td>
+                    <td>Kẹo Hà Nội</td>
+                    <td>09/03/2020</td>
+                    <td><i class="fa-solid fa-magnifying-glass"></i></td>
+                    <td><i class="fa fa-file"></i></td>
+                    <td><i class="fa-solid fa-trash-can"></i></td>
+                </tr>
+                <tr>
+                    <td>94</td>
+                    <td>
+                         <input type="checkbox" name="" id="">
+                    </td>
+                    <td>3051</td>
+                    <td>GJFJ-1243</td>
+                    <td>Bánh Chè Lam Minh Ngọc</td>
+                    <td>Kẹo Hà Nội</td>
+                    <td>09/03/2020</td>
+                    <td><i class="fa-solid fa-magnifying-glass"></i></td>
+                    <td><i class="fa fa-file"></i></td>
+                    <td><i class="fa-solid fa-trash-can"></i></td>
+                </tr>
+                <tr style="background: rgb(238, 238, 238);">
+                    <td>95</td>
+                    <td>
+                         <input type="checkbox" name="" id="">
+                    </td>
+                    <td>3499</td>
+                    <td>DFJH23IHU</td>
+                    <td>Bánh Nhãn</td>
+                    <td>Kẹo Hà Nội</td>
+                    <td>09/03/2020</td>
+                    <td><i class="fa-solid fa-magnifying-glass"></i></td>
+                    <td><i class="fa fa-file"></i></td>
+                    <td><i class="fa-solid fa-trash-can"></i></td>
+                </tr>
+                <tr>
+                    <td>96</td>
+                    <td>
+                         <input type="checkbox" name="" id="">
+                    </td>
+                    <td>3498</td>
+                    <td>HGJRJ23</td>
+                    <td>Bánh Nhãn</td>
+                    <td>Kẹo Hà Nội</td>
+                    <td>09/03/2020</td>
+                    <td><i class="fa-solid fa-magnifying-glass"></i></td>
+                    <td><i class="fa fa-file"></i></td>
+                    <td><i class="fa-solid fa-trash-can"></i></td>
+                </tr>
+                <tr style="background: rgb(238, 238, 238);">
+                    <td>97</td>
+                    <td>
+                         <input type="checkbox" name="" id="">
+                    </td>
+                    <td>3497</td>
+                    <td>JTGJ152</td>
+                    <td>Bánh Phu Thê</td>
+                    <td>Kẹo Hà Nội</td>
+                    <td>09/03/2020</td>
+                    <td><i class="fa-solid fa-magnifying-glass"></i></td>
+                    <td><i class="fa fa-file"></i></td>
+                    <td><i class="fa-solid fa-trash-can"></i></td>
+                </tr>
+                <tr>
+                    <td>98</td>
+                    <td>
+                         <input type="checkbox" name="" id="">
+                    </td>
+                    <td>3496</td>
+                    <td>NTGFFH41</td>
+                    <td>Bột sắn dây hương bưởi</td>
+                    <td>Kẹo Hà Nội</td>
+                    <td>09/03/2020</td>
+                    <td><i class="fa-solid fa-magnifying-glass"></i></td>
+                    <td><i class="fa fa-file"></i></td>
+                    <td><i class="fa-solid fa-trash-can"></i></td>
+                </tr>
+                <tr style="background: rgb(238, 238, 238);">
+                    <td>99</td>
+                    <td>
+                         <input type="checkbox" name="" id="">
+                    </td>
+                    <td>3495</td>
+                    <td>GRGYH121</td>
+                    <td>Bánh Đậu Xanh Hạt Sen</td>
+                    <td>Kẹo Hà Nội</td>
+                    <td>09/03/2020</td>
+                    <td><i class="fa-solid fa-magnifying-glass"></i></td>
+                    <td><i class="fa fa-file"></i></td>
+                    <td><i class="fa-solid fa-trash-can"></i></td>
+                </tr>
+                <tr >
+                    <td>100</td>
+                    <td>
+                         <input type="checkbox" name="" id="">
+                    </td>
+                    <td>3494</td>
+                    <td>TJHJF145</td>
+                    <td>Bánh Đậu Xanh Trà Xanh</td>
+                    <td>Kẹo Hà Nội</td>
+                    <td> 09/03/2020</td>
+                    <td><i class="fa-solid fa-magnifying-glass"></i></td>
+                    <td><i class="fa fa-file"></i></td>
+                    <td><i class="fa-solid fa-trash-can"></i></td>
+                </tr>
+            </table>
+        </div>
+           
+    </div>
+
+</body>
+<script src="js/admin.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script>
+     
+
+
+$(document).ready(function(){
+    $('.tab-content-item').hide();
+    $('.tab-content-item:first-child').fadeIn();
+    $('.menu_list li').click(function(){
+        // active menu
+        $('.menu_list li').removeClass('active');
+        $(this).addClass('active');
+
+        // show tab-pane active
+        let id_tab_content = $(this).children('a').attr('href');
+        // alert(id_tab_content);
+        $('.tab-content-item').hide(); 
+        $(id_tab_content).fadeIn();
+        return false;
+    })
+})
+$(document).ready(function(){
+    $('.tab-content-item').hide();
+    $('.tab-content-item:first-child').fadeIn();
+    $('.tab-content-item div').click(function(){
+        // active menu
+        $('.tab-content-item div').removeClass('active');
+        $(this).addClass('active');
+
+        // show tab-pane active
+        let id_tab_content = $(this).children('a').attr('href');
+        // alert(id_tab_content);
+        $('.tab-content-item').hide(); 
+        $(id_tab_content).fadeIn();
+        return false;
+    })
+})
+
+
+    </script>
+
+</html>
